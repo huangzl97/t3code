@@ -1,0 +1,17 @@
+{
+  "name": "@t3tools/lark-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lark/Feishu channel sidecar for T3 Code",
+  "scripts": {
+    "start": "node src/main.mjs",
+    "check": "node --check src/main.mjs && node --check src/config.mjs && node --check src/bindings.mjs && node --check src/t3-client.mjs"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "1.71.1"
+  },
+  "engines": {
+    "node": ">=24.10"
+  }
+}
